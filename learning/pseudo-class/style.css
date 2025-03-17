@@ -1,0 +1,18 @@
+/* states */
+a:link,a:visited{
+    color: red;
+}
+a:hover,a:active{
+    color: blue;
+}
+
+/* conditional  */
+li:first-child{
+    color: green;
+}
+li:last-child{
+    color: purple;
+}
+li:nth-child(2n){
+    color: orange;
+}
