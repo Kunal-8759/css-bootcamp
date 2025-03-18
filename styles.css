@@ -131,6 +131,8 @@ span{
     color: #ffffff;
     background-color:#1c7ed6;
     border: 2px solid #1c7ed6;
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 3px 6px grey;
 }
 /* styles for primary outline button */
 .btn-primary-outline:link,.btn-primary-outline:visited{
@@ -142,6 +144,8 @@ span{
     color: #ffffff;
     background-color: #1c7ed6;
     border: 2px solid #1c7ed6;
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 3px 6px grey;
 }
 .btn-secondary:link,.btn-secondary:visited{
     color: #ffffff;
@@ -152,6 +156,8 @@ span{
     background-color: #7048e8;
     color: #ffffff;
     border: 2px solid #7048e8;
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 3px 6px grey;
 }
 
 .highlight{
@@ -177,16 +183,50 @@ span{
     width: 80px;
 }
 
+
+/* chat feature icon */
+.chat-container{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+
+    position: fixed;
+    bottom: 2rem;
+    right:2rem;
+}
+.chat-img{
+    height: 5rem;
+    width: 5rem;
+    fill: red;
+}
+
+
+/* beta  */
+.beta{
+    position: relative;
+}
+.beta::after{
+    content:"Beta";
+    position:absolute;
+    top:0;
+    right:0;
+    transform:translate(70%,-60%);
+    background-color: #ff922b;
+    padding: 0.3rem;
+}
+
+
+
 /* ----------------------SECTIONS---------------------- */
 
 /* define the allignment of the element using inheritance or directly mentioning */
 
 /* ---------header--------- */
-.header{
-    height:100vh;
-    min-height:800px;
-}
-
+    
 /* nav bar */
 .nav-bar{
     height: var(--nav-height);
@@ -229,6 +269,9 @@ span{
 .hero-section-heading{
     text-align: center;
 }
+.hero-section-para{
+    text-align: center;
+}
 .hero-section-ul{
     display: flex;
     flex-direction: row;
@@ -265,7 +308,7 @@ span{
 }
 /* ----------CTA SECTION---------- */
 .cta-section{
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -301,4 +344,6 @@ span{
     display: flex;
     gap: 1rem;
 }
+
+
 

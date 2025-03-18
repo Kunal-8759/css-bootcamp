@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anchor with Height & Width</title>
     <style>
-       ul {
-            list-style: none;
-       }
+       a, div {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            display: block; /* Ensuring <a> behaves like <div> */
+            text-align: center;
+            line-height: 300px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <ul>
-        <li>hii</li>
-        <li>hello</li>
-        <li>hey</li>
-    </ul>
+    <a href="#">Hii</a>
+    <div>Hello</div>
 </body>
 </html>
